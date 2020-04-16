@@ -4,6 +4,7 @@ const weatherForm = document.querySelector('form')
 const search=document.querySelector('input')
 const messageOne = document.querySelector('#message-one')
 const messageTwo = document.querySelector('#message-two')
+const message3 = document.querySelector('#message-3')
 
 weatherForm.addEventListener('submit',(e)=>{
     const location = search.value
@@ -19,6 +20,7 @@ weatherForm.addEventListener('submit',(e)=>{
         else{
             messageOne.textContent=data.address
             messageTwo.textContent=data.temperature
+            message3.textContent=data.cloudcover
         
         }
     })
