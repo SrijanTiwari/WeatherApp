@@ -20,7 +20,7 @@ weatherForm.addEventListener('submit',(e)=>{
         else{
             messageOne.textContent=data.address
             messageTwo.textContent=data.temperature
-            message3.textContent=data.cloudcover
+            message3.textContent=data.cloud
         
         }
     })
